@@ -5,15 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"node ./src/index.js"
+    "dev": "nodemon ./src/index.js",
+    "create-lint": "eslint --init"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.0",
+    "glob": "^7.1.6",
     "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^9.4.0",
+    "koa2-cors": "^2.0.6",
     "mongoose": "^5.10.7"
   },
   "devDependencies": {
-    "eslint": "^7.10.0"
+    "eslint": "^7.10.0",
+    "eslint-plugin-node": "^11.1.0",
+    "nodemon": "^2.0.4"
   }
 }
